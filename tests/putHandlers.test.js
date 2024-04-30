@@ -30,7 +30,7 @@ test("Status code should be 200", async () => {
 });
 
 
-test("Status code should be 200", async () => {
+test("Response code should be ok", async () => {
 	let responseOk;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/2`, {
