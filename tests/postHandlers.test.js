@@ -28,7 +28,7 @@ test('Status code should be 201', async () => {
 	expect(actualStatusCode).toBe(201);
 });
 
-Const: requestBody = {
+const requestBody = {
 	"productsList": [
 		{
 		  "id": 4,
