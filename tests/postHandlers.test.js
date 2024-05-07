@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
 const config = require('../config');
 
-Const: requestBody = {
+const requestBody = {
 "productsList": [
     {
       "id": 3,
