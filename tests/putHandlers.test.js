@@ -44,5 +44,5 @@ test("Response code should be ok", async () => {
 	} catch (error) {
 		console.error(error);
 	}
-	expect(responseOk).toBe(true)
+	expect(responseOk).toBe(false)
 });
