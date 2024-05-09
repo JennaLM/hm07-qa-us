@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
-const config = require('../config');
+let config = require('../config');
 
-const requestBody = {
+let requestBody = {
 "productsList": [
     {
       "id": 3,
@@ -14,7 +14,7 @@ const requestBody = {
 test('Status code should be 201', async () => {
  let actualStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/orders`, {
+		let response = await fetch(`${config.API_URL}/api/v1/orders`, {
 			method: 'POST',
 			headers: {
 			'Content-Type': 'application/json'
@@ -28,7 +28,7 @@ test('Status code should be 201', async () => {
 	expect(actualStatusCode).toBe(201);
 });
 
-const requestBody = {
+let requestBody = {
 	"productsList": [
 		{
 		  "id": 4,
@@ -41,7 +41,7 @@ const requestBody = {
 	test('Status code should be 201', async () => {
 	 let actualStatusCode;
 		try {
-			const response = await fetch(`${config.API_URL}/api/v1/orders`, {
+			let response = await fetch(`${config.API_URL}/api/v1/orders`, {
 				method: 'POST',
 				headers: {
 				'Content-Type': 'application/json'
